@@ -1,39 +1,47 @@
-// Header.scss
-.header {
-  .logo {
-    flex: 1;
+body {
+  background-color: #fafafa;
+}
+
+.search {
+  display: flex;
+  position: relative;
+  align-items: center;
+  border-radius: 20px;
+  background-color: #fff;
+  margin: 0 auto; // Centrar el contenedor de búsqueda
+  &:hover {
+    background-color: rgba(26, 26, 26, 0.15);
   }
 
-  .search {
-    position: relative;
-    border-radius: 4px;
-    background-color: rgba(255, 255, 255, 0.15);
-    margin-left: 0;
+  .inputBase {
+    background-color: bisque;
+    align-items: center;
+    padding-left: 40px; // Ajustar según el tamaño del icono de búsqueda
     width: 100%;
-
-    .searchIcon {
-      padding: 0 8px;
-      position: absolute;
-      pointer-events: none;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-    }
-
-    .inputBase {
-      color: inherit;
+    input {
       padding: 8px 8px 8px 0;
       width: 100%;
     }
   }
+}
 
-  .actions {
-    display: flex;
-    align-items: center;
-    justify-content: flex-end;
+.grow {
+  flex-grow: 1;
+}
+
+.sectionDesktop {
+  display: flex;
+  justify-content: flex-end;
+  .MuiIconButton-root {
+    margin-left: 20px;
   }
 }
 
-
-
-
+.mainImg {
+  background: url(../assets/img/main2.png);
+  width: 100%; 
+  height: 100%;
+  background-repeat: no-repeat;
+  background-position: right;
+  background-size: auto;
+}

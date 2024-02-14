@@ -1,4 +1,4 @@
-import HeaderHomePage from './header-home-page';
+import HeaderHomePage from './header';
 
 export {                      
     HeaderHomePage,
